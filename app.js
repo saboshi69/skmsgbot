@@ -1,7 +1,7 @@
 const express = require('express');
 const socket = require('socket.io');
 const app = express()
-let server = app.listen(8000, () => { console.log('listen port 8000') })
+let server = app.listen(process.env.PORT || 8000, () => { console.log('listen port 8000') })
 let io = socket(server)
 
 

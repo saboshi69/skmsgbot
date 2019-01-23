@@ -1,7 +1,7 @@
 //front end connection
 
 
-let socket = io.connect('http://localhost:8000')
+let socket = io.connect('https://skmsgbot.herokuapp.com')
 let message = document.querySelector("#message")
 let btn = document.querySelector("#send")
 let handle = document.querySelector("#handle")
